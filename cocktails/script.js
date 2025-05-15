@@ -50,7 +50,7 @@ async function showDetails(drinkId) {
 
         document.getElementById('drink-name').textContent = drink.strDrink;
         document.getElementById('drink-image').src = drink.strDrinkThumb;
-        document.getElementById('drink-instructions').textContent = drink.strInstructions;
+        document.getElementById('drink-instructions').textContent = drink.strInstructionsFR || drink.strInstructions;
 
         // Ingrédients + mesures
         const ingredientsList = document.getElementById('drink-ingredients');
